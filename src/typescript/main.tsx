@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from "../App";
+import App from "../App.js";
 import "../scss/style.scss";
 import { initNavigation } from "./navigation.js";
 import { initModal } from "./modal.js";

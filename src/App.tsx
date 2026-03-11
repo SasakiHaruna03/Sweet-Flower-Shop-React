@@ -1,11 +1,11 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import Gallery from "./pages/Gallery";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
+import Home from "./pages/Home.js";
+import Gallery from "./pages/Gallery.js";
+import About from "./pages/About.js";
+import Contact from "./pages/Contact.js";
 
 function App() {
     const router = createBrowserRouter(
