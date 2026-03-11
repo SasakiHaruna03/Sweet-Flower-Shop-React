@@ -1,4 +1,7 @@
 import React from "react";
+import Footer1 from '../media/images/common/Image-footer-1.png';
+import Footer2 from '../media/images/common/Image-footer-2.png';
+import Footer3 from '../media/images/common/Image-footer-3.png';
 
 export default function Footer() {
     return (
@@ -6,12 +9,12 @@ export default function Footer() {
             <picture className="picture reveal__item">
                 <source
                     media="(min-width: 768px) and (max-width: 1024px)"
-                    srcSet="/src/media/images/common/Image-footer-2.png"
+                    srcSet={Footer2}
                 />
-                <source media="(max-width: 767px)" srcSet="/src/media/images/common/Image-footer-3.png" />
+                <source media="(max-width: 767px)" srcSet={Footer3} />
                 <img
                     className="footer-img"
-                    src="/src/media/images/common/Image-footer-1.png"
+                    src={Footer1}
                     alt="Our Bloomsのフローラルデザインの背景画像"
                 />
             </picture>

@@ -1,6 +1,14 @@
 import React, { useEffect } from "react";
 import { initReveal } from "../typescript/scroll.js";
 
+import OwnerImg from "../media/images/about/Image_owner.png";
+import About1 from "../media/images/about/Image01_about.png";
+import About2 from "../media/images/about/Image02_about.png";
+import About3 from "../media/images/about/Image03_about.png";
+import Breaker1 from "../media/images/about/Image_breaker1.png";
+import Breaker2 from "../media/images/about/Image_breaker2.png";
+import Breaker3 from "../media/images/about/Image_breaker3.png";
+
 export default function About() {
     useEffect(() => {
         try {
@@ -18,7 +26,7 @@ export default function About() {
                 <p className="about__title caption1 reveal__item">our story</p>
                 <div className="about__content">
                     <div className="about__owner reveal__item">
-                        <img src="/src/media/images/about/Image_owner.png" alt="owner" />
+                        <img src={OwnerImg} alt="owner" />
                         <span className="owner__text">
                             <p className="caption2">Lily smith</p>
                             <p className="h4">Owner</p>
@@ -31,9 +39,9 @@ export default function About() {
                         </h2>
                     </div>
                     <div className="story__img reveal__item">
-                        <img src="/src/media/images/about/Image01_about.png" alt="about1" />
-                        <img src="/src/media/images/about/Image02_about.png" alt="about2" />
-                        <img src="/src/media/images/about/Image03_about.png" alt="about3" />
+                        <img src={About1} alt="about1" />
+                        <img src={About2} alt="about2" />
+                        <img src={About3} alt="about3" />
                     </div>
                     <div className="story__text">
                         <p className="paragraph2 reveal__item">
@@ -52,9 +60,9 @@ export default function About() {
                         </p>
                     </div>
                     <picture className="picture reveal__item">
-                        <source media="(min-width: 768px) and (max-width: 1024px)" srcSet="/src/media/images/about/Image_breaker2.png" />
-                        <source media="(max-width: 767px)" srcSet="/src/media/images/about/Image_breaker3.png" />
-                        <img className="story__catch" src="/src/media/images/about/Image_breaker1.png" alt="breaker" />
+                        <source media="(min-width: 768px) and (max-width: 1024px)" srcSet={Breaker2} />
+                        <source media="(max-width: 767px)" srcSet={Breaker3} />
+                        <img className="story__catch" src={Breaker1} alt="breaker" />
                     </picture>
                     <div className="announce">
                         <div className="announce__text">

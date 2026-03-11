@@ -1,6 +1,7 @@
+import hamburgerIcon from "../media/images/common/hamburger-Icons-close.svg";
+import closeIcon from "../media/images/common/hamburger-Icons-open.svg";
+
 export function initNavigation() {
-    const hamburgerIcon = "/src/media/images/common/hamburger-Icons-close.svg";
-    const closeIcon = "/src/media/images/common/hamburger-Icons-open.svg";
 
     let attempts = 0;
     const maxAttempts = 20; // retry for up to ~2 seconds (20 * 100ms)

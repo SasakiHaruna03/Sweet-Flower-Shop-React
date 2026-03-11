@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import IconClose from '../media/images/common/hamburger-Icons-close.svg';
 
 export default function Header() {
     const closeNav = () => {
         const nav = document.querySelector<HTMLElement>(".js-nav");
         const icon = document.querySelector<HTMLImageElement>(".p-hamburger img");
         if (nav) nav.classList.remove("is-active");
-        if (icon) icon.src = "/src/media/images/common/hamburger-Icons-close.svg";
+    if (icon) icon.src = IconClose;
     };
 
     return (
@@ -20,10 +21,7 @@ export default function Header() {
                 </Link>
             </div>
             <button className="p-hamburger js-hamburger" aria-label="メニューを開く">
-                <img
-                    src="/src/media/images/common/hamburger-Icons-close.svg"
-                    alt="メニューアイコン"
-                />
+                <img src={IconClose} alt="メニューアイコン" />
             </button>
             <nav className="nav__list js-nav">
                 <ul>
