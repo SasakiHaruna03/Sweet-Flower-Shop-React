@@ -1,5 +1,4 @@
-# css-html-practice
+# 概要
 
-HTMLとCSSの総合課題用リポジトリです。<br>
-figmaのWebページを参考に作成します。<br>
-https://www.figma.com/design/9pcxDIwsf4H93xyDKAEcDE/Sweet-Flower-Shop?node-id=1-581&m=dev
+Sweet-Flower-ShopをReactにリプレイスするリポジトリ
+https://github.com/SasakiHaruna03/Sweet-Flower-Shop
